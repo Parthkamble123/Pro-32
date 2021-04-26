@@ -63,7 +63,7 @@ var response= await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata")
    }else if(hour>=23 && hour<=0){
       bg = "sunset7.png";
    }else if(hour>=0 && hour<3){
-      bg = "sunset11.png";
+      bg = "sunset12.png";
    }
 
     
