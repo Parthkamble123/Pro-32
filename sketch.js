@@ -33,12 +33,7 @@ function draw(){
     Engine.update(engine);
 
     // write code to display time in correct format here
-    if(hour < 12 && hour > 0){
-        changetime = "AM";
-    }
-    else {
-        changetime = "PM";
-    };
+    
   
 
 }
@@ -56,14 +51,20 @@ var response= await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata")
      hour= datetime.slice(11,13)
 
     // add conditions to change the background images from sunrise to sunset
-   if(hour>=4 && hour<=6){
+   if(hour>=06 && hour<=08){
       bg = "sunrise1.png";
-   }else if(hour>=6 && hour<=8){
-      bg = "sunrise2.png";
-   }else if(hour>=23 && hour<=0){
+   }else if(hour>=08 && hour<=10){
+      bg = "sunrise3.png";
+   }else if(hour>=10 && hour<=12){
+      bg = "sunrise5.png";
+   }else if(hour>=12 && hour<=14){
+      bg = "sunrise6.png";
+   }else if(hour>=14 && hour<17){
       bg = "sunset7.png";
-   }else if(hour>=0 && hour<3){
-      bg = "sunset12.png";
+   }else if(hour>=17 && hour<=20){
+      bg = "sunset10.png";
+   }else if(hour>=20 && hour<=24){
+      bg = "sunset12.png"
    }
 
     
